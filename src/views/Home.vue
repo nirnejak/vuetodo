@@ -1,5 +1,5 @@
 <template>
-  <div id="" class="container">
+  <div id="app" class="container">
     <AddTodo v-on:add-todo="addTodo"/>
     <Todos v-bind:todos="todos" v-on:del-todo="deleteTodo"/>
   </div>
@@ -12,7 +12,7 @@ import AddTodo from "../components/AddTodo";
 import Todos from "../components/Todos";
 
 export default {
-  name: "Home",
+  name: 'Home',
   components: {
     Todos,
     AddTodo
