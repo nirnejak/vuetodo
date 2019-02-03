@@ -1,10 +1,10 @@
 <template>
     <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
-        <p>
             <input type="checkbox" v-on:change="markComplete">
             {{ todo.title }}
-            <button @click="$emit('del-todo', todo.id)" class="del">x</button>
-        </p>
+            <button @click="$emit('del-todo', todo.id)" class="del">
+                <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
     </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
 <style scoped>
 .todo-item {
     background: #f4f4f4;
-    padding: 10px;
+    padding: 15px;
     border-bottom: 1px #ccc dotted;
 }
 

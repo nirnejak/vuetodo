@@ -36,6 +36,8 @@ export default {
 <style scoped>
     form {
         display: flex;
+        margin-top: 20px;
+        margin-bottom: 0px;
     }
     input[type="text"] {
         flex: 10;

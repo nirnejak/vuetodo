@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="list">
     <ul v-bind:key="todo.id" v-for="todo in todos">
       <TodoItem v-bind:todo="todo" v-on:del-todo="$emit('del-todo', todo.id)"/>
     </ul>
@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import TodoItem from './TodoItem.vue';
+import TodoItem from "./TodoItem.vue";
 
 export default {
   name: "Todos",
@@ -19,4 +19,8 @@ export default {
 </script>
 
 <style scoped>
+  div > ul {
+    margin: 0px;
+    padding: 0px;
+  }
 </style>

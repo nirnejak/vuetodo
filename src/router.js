@@ -5,7 +5,7 @@ import Home from './views/Home.vue';
 Vue.use(Router)
 
 export default new Router({
-    router: [
+    routes: [
         {
             path: '/',
             name: 'home',
